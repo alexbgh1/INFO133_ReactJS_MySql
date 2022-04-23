@@ -1,0 +1,99 @@
+
+h1{
+  text-align: center;
+}
+
+/* Container parametros  */
+.param-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.param {
+  margin:10px;
+  display: grid;
+  text-align: center;
+}
+
+/* Label after click */
+input[type=text] {
+  width: 170px;
+  border: #63a6d6 solid 1px;
+  background-color: #f7fafc;
+  border-radius: 3px;
+  outline: none;
+}
+
+input[type=number] {
+  width: 100px;
+  border: #63a6d6 solid 1px;
+  background-color: #f7fafc;
+  border-radius: 3px;
+  outline: none;
+  outline-width: 0px;
+}
+
+input[type=text]:focus {
+  border: 1px solid #2d79af;
+  background-color: #ebf4fa;
+}
+input[type=number]:focus {
+  background-color: #ebf4fa;
+  border: 1px solid #2d79af;
+}
+
+/* Container Boton */
+.button-container{
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.button-generate-dot {
+  background-color: #63a6d6;
+  border: none;
+  border-radius: 2px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 15px 2px 4px 2px;
+  cursor: pointer;
+
+  transition: 1s;
+}
+
+.button-generate-dot:hover{
+
+  background-color: #2d79af;
+  border-radius: 10px;
+}
+
+/* Puntos creados */
+.points-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.points{
+  margin:2px;
+}
+
+@media screen and (max-width: 600px){
+  .param-container{
+    flex-direction: column;
+  }
+  .param {
+    margin:10px;
+  }
+  input[type=number]{
+    width: 170px;
+  }
+}
+
